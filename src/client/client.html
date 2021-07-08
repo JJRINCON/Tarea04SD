@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--MILLIGRAM-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Cliente</title>
+</head>
+<body>
+    <div class="container">
+        <form action="http://localhost:3000/addProduct" method="POST" action="dataForm">
+            <label>Productos</label>
+            <br>
+            nombre: <input type="text" name="name" id="name">
+            <br>
+            precio: <input type="text" name="price" id="price">
+            <br>
+            <button onclick="addProduct()" class="addBtn">Agregar</button>
+        </form>
+        <button onclick="showProducts()">Ver productos</button>
+        <script src="client.js"></script>
+    </div>
+</body>
+</html>
